@@ -1,8 +1,9 @@
 import React, { lazy, Suspense } from "react";
 import { createBrowserRouter, createRoutesFromChildren, Route } from "react-router-dom";
-import PageNotFound from "./pages/pageNotFound";
 import Loader from "./components/Loader";
 
+
+const PageNotFound = lazy(() => import("./pages/PageNotFound"));
 const LandingPage = lazy(() => import("./pages/LandingPage"));
 const RootLayout = lazy(() => import("./layouts/RootLayout"));
 const AdminLayout = lazy(() => import("./layouts/AdminLayout"));
@@ -15,7 +16,7 @@ const User = lazy(() => import("./pages/user/User"));
 const ForgetPassword = lazy(() => import("./pages/ForgetPassword"));
 const NoAccess = lazy(() => import("./pages/NoAccess"));
 const SuperAdminLayout = lazy(() => import("./layouts/SuperAdminLayout"));
-const SuperAdmin = lazy(() => import("./pages/superAdmin/superAdmin"));
+const SuperAdmin = lazy(() => import("./pages/superAdmin/SuperAdmin"));
 const WorkingHours = lazy(() => import("./pages/admin/WorkingHours"));
 const DaysOff = lazy(() => import("./pages/admin/DaysOff"));
 const Planning = lazy(() => import("./pages/admin/Planning"));

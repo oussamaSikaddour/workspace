@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
-import FirstForm from '../scenes/forgetPassword/firstForm'
-import SecondForm from '../scenes/forgetPassword/secondForm'
+import FirstForm from '../scenes/forgetPassword/FirstForm'
+import SecondForm from '../scenes/forgetPassword/SecondForm'
 import Footer from '../components/Footer';
 import { useNavigate } from 'react-router-dom';
 import { navigation } from '../util/util';
