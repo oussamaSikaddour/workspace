@@ -12,7 +12,7 @@
   <livewire:scenes.landing.hero :$logoUrl/>
   <livewire:scenes.landing.about-us/>
   <livewire:scenes.landing.trainings/>
-  <livewire:scenes.landing.classrooms/>
+  {{-- <livewire:scenes.landing.classrooms/> --}}
   <livewire:scenes.landing.products />
   <livewire:scenes.landing.contact-us :map="$gSettings->map"/>
 
