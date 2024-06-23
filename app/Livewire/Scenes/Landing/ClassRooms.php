@@ -6,7 +6,7 @@ use App\Models\Classroom;
 use Livewire\Attributes\Computed;
 use Livewire\Component;
 
-class Classrooms extends Component
+class ClassRooms extends Component
 {
 
     protected function getPrimaryImageUrl($classroom)
@@ -30,6 +30,6 @@ class Classrooms extends Component
         }
     public function render()
     {
-        return view('livewire.scenes.landing.classrooms');
+        return view('livewire.scenes.landing.class-rooms');
     }
 }
