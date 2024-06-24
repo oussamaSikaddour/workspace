@@ -7,7 +7,9 @@
         </h2>
 @auth
         <div class="nav__addons">
+            @can('admin-access')
            <x-main-menu.open-btn   html_id="mainMenuDeskTopBtn" />
+           @endcan
            <livewire:nav-logo/>
         </div>
         <ol class="nav__items">
