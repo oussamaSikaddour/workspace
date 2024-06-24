@@ -4,7 +4,7 @@ namespace App\Livewire\Guest\Register;
 
 use App\Enums\RoutesNamesEnum;
 use App\Events\Auth\EmailVerificationEvent;
-use App\Livewire\Forms\register\SecondForm as RegisterSecondForm;
+use App\Livewire\Forms\Register\SecondForm as RegisterSecondForm;
 use App\Models\User;
 use Livewire\Component;
 
