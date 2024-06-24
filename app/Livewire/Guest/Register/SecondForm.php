@@ -32,10 +32,7 @@ class SecondForm extends Component
        if ($response['status']) {
          $this->reset();
          $this->dispatch('second-step-succeeded');
-         if (session()->get('currentClassRoomId') !== null) {
-            return $this->redirectRoute('classroom', ['classroomId' => session()->get('currentClassRoomId')]);
-          }
-        return  $this->redirectRoute(RoutesNamesEnum::USER_ROUTE);
+         redirect()->route(RoutesNamesEnum::USER_ROUTE);
          }else{
             $this->dispatch('open-errors', $response['errors']);
          }

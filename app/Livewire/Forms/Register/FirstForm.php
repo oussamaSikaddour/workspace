@@ -57,7 +57,6 @@ class FirstForm extends Form
                 $default = [
                     'email' => $data['email'],
                     "password" => Hash::make($data['password']),
-                    "name"=>""
                 ];
                 $user = User::create($default);
 

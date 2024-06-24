@@ -1,3 +1,5 @@
+<!-- resources/views/livewire/registration-form.blade.php -->
+
 <form class="form form--1" wire:submit.prevent="handleSubmit" >
     <h3>@lang("forms.register.first-f.instruction")</h3>
 

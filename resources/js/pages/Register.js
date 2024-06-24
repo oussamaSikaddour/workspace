@@ -14,7 +14,7 @@ export const registerFirstForm= ()=>{
  const registerForms = document.querySelector(".forms");
  registerForms.classList.add("slide");
 localStorage.setItem('registration-email', email);
-despatchCustomEvent('set-email-registration', {email});
+despatchCustomEvent('email-registration-is-set', {email});
 registerFirstForm.setAttribute("inert", "");
 registerSecondForm.removeAttribute("inert");
 setTimeout(() => {
