@@ -1,19 +1,19 @@
-     
+
 import {toggleInertForChildElement} from '../traits/Inert'
 
 export const focusNonHiddenInput = (form) => {
     if (!form || !form.tagName || form.tagName.toLowerCase() !== 'form') {
       return;
     }
-   
+
     let currentInput = form.querySelector('input'); // Start with the first input
-   
+
     while (currentInput) {
       const focusableLabel = currentInput.nextElementSibling?.matches('label[tabindex="0"]'); //
       if (focusableLabel) {
        currentInput.nextElementSibling.focus();
         return;
-      } else if (!currentInput.matches('[style*="display: none"]') && !currentInput.hasAttribute('hidden')) {
+      } else if (!currentInput.matches('[style*="display: none"]') && !currentInput.hasAttribute('hidden') && !currentInput.hasAttribute('inert')) {
         currentInput.focus();
         return;
       } else {
@@ -21,9 +21,9 @@ export const focusNonHiddenInput = (form) => {
       }
     }
    };
-   
-   
-   
+
+
+
 export function clearErrorsOnFocus(myForm=null) {
        myForm = myForm ? myForm : document.querySelector('.form');
        const inputs = myForm.querySelectorAll('input, select, textarea');
@@ -31,7 +31,7 @@ export function clearErrorsOnFocus(myForm=null) {
          input.addEventListener('focus', () => {
            // Get all elements with the class "input__error"
            const errors = myForm.querySelectorAll('.input__error');
-   
+
            // Loop through each error element and set its innerHTML to an empty string
            errors.forEach(error => {
              error.innerHTML = '';
@@ -39,9 +39,9 @@ export function clearErrorsOnFocus(myForm=null) {
          });
        });
      }
-   
-   
-   
+
+
+
 
 
 
