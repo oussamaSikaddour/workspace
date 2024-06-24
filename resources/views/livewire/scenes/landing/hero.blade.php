@@ -32,6 +32,6 @@
   </div>
 
   <a href="#aboutUs" class="hero__arrow">
-    <div></div>
+    <img src="{{ asset("img/triangle.png") }}" alt="triangle">
   </a>
 </section>

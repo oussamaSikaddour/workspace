@@ -29,7 +29,7 @@
         </div>
 
         <div class="form__actions">
-            <div wire:loading>
+            <div wire:loading wire:target>
                 <x-loading />
             </div>
             @if ($generalSettings?->maintenance)

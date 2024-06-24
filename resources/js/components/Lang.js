@@ -102,7 +102,7 @@ const Lang = () => {
  const currentURLOrigin= getBaseURL(currentURL)
   const initialLanguages = [
     { lang: 'Fr', flag: `${currentURLOrigin}/img/fr.png` },
-    { lang: 'En', flag: `${currentURLOrigin}/img/En.png` },
+    { lang: 'En', flag: `${currentURLOrigin}/img/en.png` },
     { lang: 'Ar', flag: `${currentURLOrigin}/img/ar.png` },
   ];
 
