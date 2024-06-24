@@ -16,7 +16,7 @@ class FirstForm extends Component
     {
 
         $this->dispatch('form-submitted');
-        $this->registrationEmail = $this->form->email;
+        // $this->registrationEmail = $this->form->email;
         $response =  $this->form->save();
        if ($response['status']) {
         $this->dispatch('open-toast', $response['message']); // Corrected the variable name
