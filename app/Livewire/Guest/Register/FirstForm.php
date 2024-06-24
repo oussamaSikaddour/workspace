@@ -2,7 +2,7 @@
 
 namespace App\Livewire\Guest\Register;
 
-use App\Livewire\Forms\register\FirstForm as RegisterFirstForm;
+use App\Livewire\Forms\Register\FirstForm as RegisterFirstForm;
 use Illuminate\Validation\Rule;
 use Livewire\Component;
 
