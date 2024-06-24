@@ -40,7 +40,7 @@
         }
 });
  document.addEventListener('email-registration-is-set', function(event) {
-    @this.setEmail(event.detail.email);
+    @this.setEmail(event.detail.data.email);
  });
 $wire.on("second-step-succeeded", () => {
 const registerSecondStepSucceededEvent = new CustomEvent('register-second-step-succeeded' );

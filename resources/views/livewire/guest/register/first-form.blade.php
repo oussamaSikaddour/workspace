@@ -27,40 +27,40 @@
 
 @script
 <script>
- const registerFirstForm = document.querySelector(".form--1");
-const registerSecondForm = document.querySelector(".form--2");
-const registrationEmail = localStorage.getItem('registration-email') ;
-const registerForms = document.querySelector(".forms");
-if(registrationEmail){
-      addEventListener("DOMContentLoaded", (event) => {
-        const registrationEmailEvent = new CustomEvent('email-registration-is-set',
-             {
-               detail: {email:registrationEmail}
-              });
-           document.dispatchEvent(registrationEmailEvent);
-         });
+//  const registerFirstForm = document.querySelector(".form--1");
+// const registerSecondForm = document.querySelector(".form--2");
+// const registrationEmail = localStorage.getItem('registration-email') ;
+// const registerForms = document.querySelector(".forms");
+// if(registrationEmail){
+//       addEventListener("DOMContentLoaded", (event) => {
+//         const registrationEmailEvent = new CustomEvent('email-registration-is-set',
+//              {
+//                detail: {email:registrationEmail}
+//               });
+//            document.dispatchEvent(registrationEmailEvent);
+//          });
 
-         registerForms.classList.add("slide");
-         registerFirstForm.setAttribute("inert", "");
-         registerSecondForm.removeAttribute("inert");
+//          registerForms.classList.add("slide");
+//          registerFirstForm.setAttribute("inert", "");
+//          registerSecondForm.removeAttribute("inert");
 
-} else {
+// } else {
 
-         registerForms.classList.remove("slide");
-         registerFirstForm.removeAttribute("inert");
-         registerSecondForm.setAttribute("inert", "");
+//          registerForms.classList.remove("slide");
+//          registerFirstForm.removeAttribute("inert");
+//          registerSecondForm.setAttribute("inert", "");
 
-}
+// }
 
-$wire.on("first-step-succeeded", () => {
-    const firstFormSuccessEvent = new CustomEvent('register-first-step-succeeded',
-{
- detail: {
-            email:@this.registrationEmail
-        }
-});
- document.dispatchEvent(firstFormSuccessEvent);
-})
+// $wire.on("first-step-succeeded", () => {
+//     const firstFormSuccessEvent = new CustomEvent('register-first-step-succeeded',
+// {
+//  detail: {
+//             email:@this.registrationEmail
+//         }
+// });
+//  document.dispatchEvent(firstFormSuccessEvent);
+// })
 $wire.on('form-submitted',()=>{
 const clearFormErrorsOnFocusEvent = new CustomEvent('clear-form-errors-on-focus');
  document.dispatchEvent(clearFormErrorsOnFocusEvent);
