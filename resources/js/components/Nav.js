@@ -145,7 +145,7 @@ const toggleTransparentClass = (isInView) => {
     inView(hero, 90, manageSectionOnScroll, { id: "hero" })
     inView(aboutUs, 90, manageSectionOnScroll, { id: "aboutUs" })
     inView(trainings, 90, manageSectionOnScroll, { id: "trainings" })
-    inView(classRooms, 90, manageSectionOnScroll, { id: "classRooms" })
+    inView(classRooms, 90, manageSectionOnScroll, { id: "classrooms" })
     inView(products, 90, manageSectionOnScroll, { id: "products" })
     inView(contactUs, 90, manageSectionOnScroll, { id: "contactUs" })
     const heroLink = document.querySelector(`.nav--phone a[href="#hero"]`);

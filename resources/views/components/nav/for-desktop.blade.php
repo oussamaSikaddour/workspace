@@ -17,7 +17,7 @@
             <x-nav.direct-nav-link href="#hero" :label="__('pages.landing.links.hero')"/>
             <x-nav.direct-nav-link href="#aboutUs" :label="__('pages.landing.links.about-us')"/>
             <x-nav.direct-nav-link href="#trainings" :label="__('pages.landing.links.trainings')"/>
-            <x-nav.direct-nav-link href="#classRooms" :label="__('pages.landing.links.classrooms')"/>
+            <x-nav.direct-nav-link href="#classrooms" :label="__('pages.landing.links.classrooms')"/>
             <x-nav.direct-nav-link href="#products" :label="__('pages.landing.links.products')"/>
             <x-nav.direct-nav-link href="#contactUs" :label="__('pages.landing.links.contact-us')"/>
             @endif
@@ -47,7 +47,7 @@
                  <x-nav.direct-nav-link href="#hero" :label="__('pages.landing.links.hero')"/>
                  <x-nav.direct-nav-link href="#aboutUs" :label="__('pages.landing.links.about-us')"/>
                  <x-nav.direct-nav-link href="#trainings" :label="__('pages.landing.links.trainings')"/>
-                 <x-nav.direct-nav-link href="#classRooms" :label="__('pages.landing.links.classrooms')"/>
+                 <x-nav.direct-nav-link href="#classrooms" :label="__('pages.landing.links.classrooms')"/>
                  <x-nav.direct-nav-link href="#products" :label="__('pages.landing.links.products')"/>
                  <x-nav.direct-nav-link href="#contactUs" :label="__('pages.landing.links.contact-us')"/>
                  @else

@@ -1,5 +1,5 @@
 
-<section class="classrooms" id="classRooms">
+<section class="classrooms" id="classrooms">
 
     @if (count($this->ourClassrooms()) > 0)
     <div class="classrooms__header">
