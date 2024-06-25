@@ -89,9 +89,9 @@ const toggleTransparentClass = (isInView) => {
     const nav = document.querySelector(".nav");
     if (isInView) {
 
-        nav.classList.add('transparent');
+        nav?.classList.add('transparent');
     } else {
-      nav.classList.remove('transparent');
+      nav?.classList.remove('transparent');
     }
   };
 
