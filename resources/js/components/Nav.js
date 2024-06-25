@@ -132,7 +132,7 @@ const toggleTransparentClass = (isInView) => {
     const  contactUs= document.getElementById("contactUs");
     const  trainings= document.getElementById("trainings");
     const  products= document.getElementById("products");
-    const  classRooms= document.getElementById("classRooms");
+    const  classRooms= document.getElementById("classrooms");
 
     const dropDownMenus = document.querySelectorAll(".nav--phone .nav__item--dropDown")
     HumBtn?.addEventListener('click', () => {

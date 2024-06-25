@@ -9,12 +9,12 @@
 
 <livewire:carousel :showControls=false :$slides  variant="carousel--landing" wire:key="ca-Land"/>
 
-  {{-- <livewire:scenes.landing.hero :$logoUrl/>
+  <livewire:scenes.landing.hero :$logoUrl/>
   <livewire:scenes.landing.about-us/>
-  <livewire:scenes.landing.trainings/> --}}
+  <livewire:scenes.landing.trainings/>
   <livewire:scenes.landing.class-rooms/>
-  {{-- <livewire:scenes.landing.products />
-  <livewire:scenes.landing.contact-us :map="$gSettings->map"/> --}}
+  <livewire:scenes.landing.products />
+  <livewire:scenes.landing.contact-us :map="$gSettings->map"/>
 
   <footer class="landing__footer">
     @if($gSettings)
