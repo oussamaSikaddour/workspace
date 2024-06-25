@@ -11,7 +11,7 @@ export const inView = (element, visibilityPercentage, callback, props = {}) => {
 
 
   const observer = new IntersectionObserver((entries)=>{
-    callback(entries.isIntersecting,props)
+    callback(entries[0].isIntersecting,props)
   }, observerOptions);
 
 
