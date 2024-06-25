@@ -129,10 +129,12 @@ const toggleTransparentClass = (isInView) => {
     const navPhone= document.querySelector(".nav--phone")
     const hero = document.querySelector(".hero");
     const  aboutUs= document.getElementById("aboutUs");
-    const  contactUs= document.getElementById("contactUs");
     const  trainings= document.getElementById("trainings");
-    const  products= document.getElementById("products");
     const  classRooms= document.getElementById("classrooms");
+    const  products= document.getElementById("products");
+    const  contactUs= document.getElementById("contactUs");
+
+
 
     const dropDownMenus = document.querySelectorAll(".nav--phone .nav__item--dropDown")
     HumBtn?.addEventListener('click', () => {
@@ -142,10 +144,10 @@ const toggleTransparentClass = (isInView) => {
     manageInertSubNavMenuState(dropDownMenus)
 
     inView(hero,75,toggleTransparentClass)
-    inView(classRooms, 90, manageSectionOnScroll, { id: "classrooms" })
     inView(hero, 90, manageSectionOnScroll, { id: "hero" })
     inView(aboutUs, 90, manageSectionOnScroll, { id: "aboutUs" })
     inView(trainings, 90, manageSectionOnScroll, { id: "trainings" })
+    inView(classRooms, 90, manageSectionOnScroll, { id: "classrooms" })
     inView(products, 90, manageSectionOnScroll, { id: "products" })
     inView(contactUs, 90, manageSectionOnScroll, { id: "contactUs" })
     const heroLink = document.querySelector(`.nav--phone a[href="#hero"]`);
