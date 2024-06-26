@@ -11,6 +11,7 @@ class ReplyModal extends Component
 {
 
     public  $message =[];
+    public $guestMessage="";
     public AddForm $form;
     public $messageContent="";
 
@@ -40,6 +41,7 @@ class ReplyModal extends Component
         }
 
     public function mount(){
+        $this->guestMessage=$this->message['message'];
 
         $this->dispatch('initialize-tiny-mce');
         $this->form->fill([

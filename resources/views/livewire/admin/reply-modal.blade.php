@@ -1,5 +1,17 @@
+@php
+$guestMessageLabel =  strtoupper($message["name"])." ".__('forms.message.message')." :";
+
+@endphp
+
 <div class="form__container">
     <form class="form" wire:submit="handleSubmit">
+        <div class="column center">
+            <x-form.textarea
+            name="guestMessage"
+            :label="$guestMessageLabel"
+            html_id="lc-m-m"
+            />
+        </div>
         <div class="column">
             <livewire:tiny-mce-text-area htmlId="rM-m" contentUpdatedEvent="set-message-content" wire:key="rM-m" :content="$messageContent" />
         </div>
