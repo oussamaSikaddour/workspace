@@ -1,6 +1,6 @@
 
 
-@props(['name', 'label', 'html_id'])
+@props(['name', 'label', 'html_id',"disabled"=>false])
 <div class="textarea__group">
     <textarea
 
@@ -11,6 +11,9 @@
       cols="100"
       maxlength="3000"
       placeholder="{{ $label }}"
+      @if($disabled)
+      disabled
+      @endif
     >
     </textarea>
     <label for="{{ $html_id }}" class="textarea__label">{{ $label }} </label>

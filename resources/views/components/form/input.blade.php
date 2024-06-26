@@ -1,4 +1,4 @@
-@props(['name', 'label', 'type', 'html_id',"role"=>"", 'min'=>"", 'max'=>""])
+@props(['name', 'label', 'type', 'html_id',"role"=>"","disabled"=>false, 'min'=>"", 'max'=>""])
 
 <div class="input__item">
 <div class="input__group">
@@ -18,6 +18,10 @@
     @endif
     @if($max!=="")
     max="{{ $max }}"
+    @endif
+
+    @if($disabled)
+    disabled
     @endif
     />
     <label for="{{ $html_id }}" class="input__label">{{ $label }}</label>
